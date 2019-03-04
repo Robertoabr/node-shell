@@ -1,9 +1,3 @@
-process.stdout.write('prompt > ')
+require('./pwd')
 
-process.stdin.ok('data', (data) => {
-  const cmd = data.toString().trim();
-  const path = process.cwd();
-  if(cmd === 'pwd'){
-    process.stout.write(path)
-  }
-})
+
